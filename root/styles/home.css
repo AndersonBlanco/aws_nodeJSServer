@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+input{
+    background-color: lightgray;
+    color: black;
+    text-align: left;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+}
