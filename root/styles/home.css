@@ -16,6 +16,8 @@ input{
     font-size: 1rem;
     margin-block: 1rem;
     width: 90%;
+    outline: none;
+    border: none;
 }
 
 button{
