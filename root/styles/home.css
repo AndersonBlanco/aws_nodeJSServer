@@ -10,6 +10,7 @@ input{
     text-align: left;
     padding: 1rem 2rem;
     font-size: 1rem;
+    margin-block: 1rem;
 }
 
 button{
@@ -19,4 +20,6 @@ button{
     color: black;
     font-size: 1rem;
     padding: 1rem 2.5rem;
+    cursor: pointer; 
+    margin-block: 1rem;
 }
