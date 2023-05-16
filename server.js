@@ -1,16 +1,10 @@
-const express = require('express');
-const https = require('https'); 
-function usingexpress(){
-    const app = express();
+const exp = require('express'); 
+const app = exp();
 
-app.get('/test', (req, res) =>{
-    res.send('Hello Universe')
-});
-
-let port = 8080; 
-app.listen(port, (req, res) =>{
-   console.log(`Server running on port ${port}`)
+app.get('/', (req, res) =>{
+    res.send('Hello Universe'); 
 })
-}
-
-usingexpress(); 
+const port = 8080;
+app.listen(port, () =>{
+    console.log(`Server listening on port ${port}`)
+})
