@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     padding-inline: 5rem;
+    column-gap: 2.5rem;
 }
 input{
     background-color: lightgray;
