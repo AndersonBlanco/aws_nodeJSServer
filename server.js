@@ -2,7 +2,7 @@ const exp = require('express');
 const app = exp();
 
 app.get('/', (req, res) =>{
-   res.sendFile('./root/home.html');
+   res.sendFile('../root/home.html');
 
 });
 const port = 8080;
