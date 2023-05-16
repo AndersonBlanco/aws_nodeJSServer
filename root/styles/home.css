@@ -9,7 +9,7 @@ body{
     padding-top: 5rem;
 }
 input{
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
     color: black;
     text-align: left;
     padding: 1rem 2rem;
@@ -21,7 +21,7 @@ input{
 button{
     border: none;
     outline: none;
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
     color: black;
     font-size: 1rem;
     padding: 1rem 2.5rem;
