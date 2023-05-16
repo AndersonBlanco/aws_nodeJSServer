@@ -31,3 +31,7 @@ button{
     margin-block: 1rem;
 
 }
+iframe{
+    height: 100%;
+    width: 100%; 
+}
