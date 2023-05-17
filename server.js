@@ -14,6 +14,7 @@ app.get('/', (req, res) =>{
 const port = 8080;
 app.listen(port, () =>{
     console.log(`Server listening on port ${port}`)
-   
+   let script = `print("Hello Universe")`;
+   jsPython.jsPython().evaluate(script).then(r => console.log(r), e => console.log(e)); 
 })
 
