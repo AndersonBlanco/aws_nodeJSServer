@@ -1,10 +1,3 @@
-var jsPython = require('jspython-interpreter');
-const signInButton = document.getElementById('signInButton');
-signInButton.onclick = () =>{
-  alert('Hello Universe')
-}; 
-
-function test(){
-   alert("A");
-}
-/**/
+let jsPython = require('jspython-interpreter');
+let script = `print('Hello Universe')`;
+const res = jsPython.jsPython().evaluate(script).then(r => alert(r), e => alert(e));
