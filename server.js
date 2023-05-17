@@ -12,9 +12,10 @@ app.get('/', (req, res) =>{
 });
 
 let script = `
+import requests
 print('Hello Universe')
 `;
-jsPython.jsPython().evaluate(script).then(r => console.log('Results \n', r)); 
+jsPython.jsPython().evaluate(script).then(r => console.log('Results: \n', r)); 
 
 const port = 8080;
 app.listen(port, () =>{
