@@ -16,7 +16,7 @@ let script = `
  #res = requests.get("https://www.npmjs.com/package/jspython-interpreter")
  print('res.text()')
 `;
-jsPython.jsPython().evaluate(script).then(r => console.log('Results \n', r)); 
+jsPython.jsPython().evaluate(script).then(r => r); 
 
 const port = 8080;
 app.listen(port, () =>{
