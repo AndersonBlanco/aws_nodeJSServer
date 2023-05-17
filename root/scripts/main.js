@@ -1,8 +1,8 @@
-var jsPython = require('jspython-interpreter');
+const jsPython = require('jspython-interpreter').jsPython;
  
 const signInButton = document.getElementById('signInButton');
 signInButton.onclick = () =>{
-   jsPython.jsPython()
+   jsPython()
    .evaluate(script)
    .then(
       r => alert(r),
