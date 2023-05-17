@@ -7,3 +7,7 @@ signInButton.onclick = () =>{
       r => alert(r),
       e => alert(e)
    );
+
+}; 
+
+/**/
