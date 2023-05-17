@@ -1,4 +1,5 @@
 const jsPython = require('jspython-interpreter'); 
+alert('server online')
 const exp = require('express');  
 
 const app = exp();
