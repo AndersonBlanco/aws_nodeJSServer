@@ -1,2 +1,3 @@
 const jsPython = require('jspython-interpreter');
-alert('Hello Universe')
+let script = `print("Hello Universe")`;
+jsPython.jsPython().evaluate(script).then(r => console.log(r), e => console.log(e)); 
