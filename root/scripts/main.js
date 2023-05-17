@@ -4,4 +4,7 @@ signInButton.onclick = () =>{
   alert('Hello Universe')
 }; 
 
+function test(){
+   alert("A");
+}
 /**/
