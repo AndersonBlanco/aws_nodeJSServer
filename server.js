@@ -12,10 +12,7 @@ app.get('/', (req, res) =>{
 });
 
 let script = `
-!pip install requests
- import requests
- res = requests.get("https://www.npmjs.com/package/jspython-interpreter")
- print(res.text())
+print('Hello Universe')
 `;
 jsPython.jsPython().evaluate(script).then(r => console.log('Results \n', r)); 
 
