@@ -5,8 +5,9 @@ const pinInput = document.getElementById('pinInput');
 let password = passwordInput.value;
 let pin = '';
 
-//passwordInput.onfocus = (v) => password =v; 
+//passwordInput.onkeydown = (v) => password =v; 
 pinInput.onchange = (v) => pin = v; 
 button.onclick = () =>{
- alert(password)
+document.getElementById('output').innerHTML += JSON.stringify(password); 
+ alert(JSON.stringify(password))
 }
