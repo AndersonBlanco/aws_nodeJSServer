@@ -1,1 +1,2 @@
-alert('srnfjk')
+const jsPython = require('jspython-interpreter');
+alert('Hello Universe')
