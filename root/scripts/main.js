@@ -1,4 +1,6 @@
-//const jspython = require('jspython-interpreter');
+alert("Server online"); 
+/*
+const jspython = require('jspython-interpreter');
 const script = `
 print('Hello Universe')
 `;
@@ -16,3 +18,5 @@ function interpretPython(){
  
 const signInButton = document.getElementById('signInButton');
 signInButton.onclick = () => alert("Hello Universe"); 
+
+/**/
