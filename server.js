@@ -1,5 +1,5 @@
 const jsPython = require('jspython-interpreter'); 
-alert('server online')
+
 const exp = require('express');  
 
 const app = exp();
@@ -14,5 +14,6 @@ app.get('/', (req, res) =>{
 const port = 8080;
 app.listen(port, () =>{
     console.log(`Server listening on port ${port}`)
+    alert('server online'); 
 })
 
