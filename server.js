@@ -13,8 +13,10 @@ app.get('/', (req, res) =>{
 
 let script = `
  import requests
- res = requests('https://www.npmjs.com/package/jspython-interpreter')
- print('res.text()')
+ import axios
+
+ #res = requests('https://www.npmjs.com/package/jspython-interpreter')
+ print('res.json()')
 `;
 jsPython.jsPython().evaluate(script).then(r => r); 
 
