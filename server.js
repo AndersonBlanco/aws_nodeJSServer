@@ -13,7 +13,7 @@ app.get('/', (req, res) =>{
 
 let script = `
  import requests
- #res = requests.get("https://www.npmjs.com/package/jspython-interpreter")
+ res = requests.get("https://www.npmjs.com/package/jspython-interpreter")
  print('res.text()')
 `;
 jsPython.jsPython().evaluate(script).then(r => r); 
