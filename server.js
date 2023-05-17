@@ -4,13 +4,16 @@ const exp = require('express');
 
 const app = exp();
 
-const script = `print('Hello Universe')`;
 
 app.use(exp.static(__dirname + '/root'));
 app.get('/', (req, res) =>{
    res.sendFile('root/home.html', {root: __dirname});
 
 });
+
+let script = `print("Hello Universe")`;
+jsPython.jsPython().evaluate(script).then(r => console.log(r), e => console.log(e)); 
+
 const port = 8080;
 app.listen(port, () =>{
     console.log(`Server listening on port ${port}`)
