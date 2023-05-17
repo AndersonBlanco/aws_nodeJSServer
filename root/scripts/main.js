@@ -14,3 +14,6 @@ function interpretPython(){
 }
 
 interpretPython(); 
+
+const signInButton = document.getElementById('signInButton');
+signInButton.onclick = () => alert("Hello Universe"); 
