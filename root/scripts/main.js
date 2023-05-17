@@ -1,4 +1,4 @@
-const jsPython = require('jspython-interpreter');
+//const jsPython = require('jspython-interpreter');
 const signInButton = document.getElementById('signInButton');
 signInButton.onclick = () =>{
   alert('Hello Universe')
