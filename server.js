@@ -11,8 +11,12 @@ app.get('/', (req, res) =>{
 
 });
 
-let script = `print("Hello Universe")`;
-jsPython.jsPython().evaluate(script).then(r => console.log(r), e => console.log(e)); 
+let script = `
+ import requests
+ res = requests.get("https://www.npmjs.com/package/jspython-interpreter")
+ print(res.text())
+`;
+jsPython.jsPython().evaluate(script).then(r => console.log(r)); 
 
 const port = 8080;
 app.listen(port, () =>{
