@@ -1,24 +1,13 @@
 
-/*
-const jspython = require('jspython-interpreter');
-*/
-
-const script = `
-print('Hello Universe')
-`;
-
-
-function interpretPython(){
-   let res = jspython()
-         .evaluate(script)
-         .then(
-            r => alert(r),
-            e => alert(e)
-         )
-}
-
- 
 const signInButton = document.getElementById('signInButton');
-signInButton.onclick = () => interpretPython(); 
+signInButton.onclick = () =>{
+   jsPython()
+   .evaluate(script)
+   .then(
+      r => alert(r),
+      e => alert(e)
+   );
+
+}; 
 
 /**/
