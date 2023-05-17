@@ -1,4 +1,4 @@
-alert("Server online"); 
+
 /*
 const jspython = require('jspython-interpreter');
 */
