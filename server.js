@@ -18,7 +18,7 @@ let script = `
 #res = axios.get('https://www.npmjs.com/package/jspython-interpreter')
  print('res.json()')
 `;
-jsPython.Interpreter.create().
+
 jsPython.jsPython().evaluate(script).then(r => r); 
 
 const port = 8080;
