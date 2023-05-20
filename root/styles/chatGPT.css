@@ -43,3 +43,12 @@ button{
     color: white; 
     font-weight: bolder;
 }
+
+#backToHome{
+    color:rgb(0, 220, 128);
+    font-size: 1.5rem;
+    display: flex; 
+    position: relative;
+    left: -50rem;
+
+}  

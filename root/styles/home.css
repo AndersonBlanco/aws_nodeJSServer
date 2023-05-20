@@ -38,3 +38,12 @@ button{
     background-color: rgb(0, 220, 128);
     color: white; 
 }
+
+#backToAuth{
+    color:rgb(0, 220, 128);
+    font-size: 1.5rem;
+    display: flex; 
+    position: relative;
+    left: -50rem;
+
+}  
