@@ -32,3 +32,9 @@ button{
 
 }
  
+
+
+#toChatGPT{
+    background-color: rgb(0, 220, 128);
+    color: white; 
+}

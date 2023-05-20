@@ -1,2 +1,2 @@
-const chatGPT = document.getElementById('chatGPT');
+const chatGPT = document.getElementById('toChatGPT');
 chatGPT.onclick = () => location.assign('./chatgpt'); 
