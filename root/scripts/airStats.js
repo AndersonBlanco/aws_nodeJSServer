@@ -1,3 +1,7 @@
+const homeContent = document.getElementById("home_content");
+const AnalyzeButton = document.getElementById('analyzeButton');
+ 
+
 function getWindSpeeds(lat, long){
    const params = 'windSpeed';
 
@@ -7,13 +11,15 @@ function getWindSpeeds(lat, long){
      }
    }).then((response) => response.json()).then((jsonData) => {
      console.log(jsonData);
+     homeContent.innerHTML += `<p class = 'text'>${JSON.stringify(jsonData)}</p>`;
    });
 };
 
 
 navigator.geolocation.getCurrentPosition((data) =>{
    const {latitude, longitude} = data.coords;
-   //getWindSpeeds(latitude, longitude);
-}); 
+   AnalyzeButton.onclick = () => getWindSpeeds(latitude, longitude);
+});
+
 
 
